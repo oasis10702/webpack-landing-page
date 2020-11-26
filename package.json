@@ -6,7 +6,7 @@
   "scripts": {
     "start": "serve build -l 8080",
     "dev": "webpack-dev-server --config ./src/webpack.config.js",
-    "build": "rm -rf build && NODE_ENV=production webpack --config ./src/webpack.config.js"
+    "build": "rm -rf build && NODE_ENV=local webpack --config ./src/webpack.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

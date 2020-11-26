@@ -62,7 +62,7 @@ module.exports = Object.keys(languages).map(language => ({
         test: /\.scss$/,
         use: [
           'style-loader',
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           'css-loader',
           {
             loader: 'postcss-loader',
